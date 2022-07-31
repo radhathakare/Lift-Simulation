@@ -11,9 +11,6 @@
       font-size: 3.5rem;
   }
 }
-.elevators-body {
-  background-color: #fff;
-}
 
 #dynamicCompartment {
   position: relative;
@@ -25,8 +22,7 @@
 .elevator {
   position: relative;
   margin: 0 8px;
-  background-color: #e0e8ec;
-  width: 50px;
+  width: 90px;
   height: 429.6px;
   top: 0px;
   text-align: center;
@@ -34,18 +30,20 @@
 }
 
 .compartment {
-  position: absolute;
   bottom: 0px;
   background-color: #71797E;
   border:5px solid #333;
-      border-bottom:none;
-      position:absolute;
+  border-bottom:none;
+  position:absolute;
   height: 85px;
   font-size: 12pt;
   color: #ffffff;
   font-weight: 500;
   overflow: hidden;    
-  width: 20%;
+  width: 80%;
+}
+.compartment:hover { 
+  background-color: #0b0c0c;
 }
 
 
@@ -68,6 +66,12 @@
 
 .floor-buttons {
   height: 85px;
+  border:2px solid #333;
+  border-bottom:none;
+  border-left: none;
+  border-right: none;
+  
+   
 }
 
 .span-floor {
@@ -77,35 +81,30 @@ color: white;
 
 .button {
   border: none;
-  border-radius: 50%;
-  height: 30px;
-  width: 30px;
-  background-color: #26253d;
+  height: 50px;
+  width: 50px;
+  background-color: rgb(106, 153, 211);
   cursor: pointer;
   margin-right: 10px;
 }
 
 .button:hover {
-  background-color: #b1e2ff;
+  background-color: #f8482e;
 }
 
-.button:hover .upSide{ border-bottom: 9px solid #26253d;}
+
 
 .button > .upSide {
-height: 0; 
-border-left: 8.5px solid transparent;
-border-right: 8.5px solid transparent;	
-border-bottom: 9px solid #ffffff;
+color: white;
+font-size: 12px;
 }
 
 .button > .downSide {
-height: 0; 
-border-left: 8.5px solid transparent;
-border-right: 8.5px solid transparent;	
-border-top: 9px solid white;
+  color: white;
+  font-size: 10px;;
 }
 
-.button:hover .downSide{ border-top: 9px solid #26253d;}
+
 
 #floor-buttons-1 button.button.downSide {
 display: none;
@@ -120,12 +119,13 @@ display: none;
   border-radius: 50%;
   height: 30px;
   width: 30px;
-  background-color: #26253d;
-  margin-right: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .floor-number-label {
-color: rgb(255, 255, 255);
+color: rgb(23, 19, 19);
+margin: 20px;
 }
 
 .cursor-pointer {

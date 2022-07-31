@@ -14,9 +14,9 @@
               for (floor = j = me.floors; j >= 1; floor = j += -1) {
                   upDownButtons.push(`<div id = 'floor-buttons-${floor}' class='floor-buttons d-flex align-items-center'>
                   <div class="floor-number-container d-flex align-items-center justify-content-center">
-                  <label class="floor-number-label">${floor}</label></div>
-                  <button class='button upSide' data-floor='${floor}'><div class='upSide'></div>
-                  </button><button class='button downSide' data-floor='${floor}'><div class='downSide'></div></button></div>`);
+                  <label class="floor-number-label">Floor${floor}</label></div>
+                  <button class='button upSide' data-floor='${floor}'><div class='upSide'>UP</div>
+                  </button><button class='button downSide' data-floor='${floor}'><div class='downSide'>DOWN</div></button></div>`);
               }
               return upDownButtons;
           })()).join('');
@@ -114,7 +114,7 @@
           inMaintenance: false,
       });
       let count = i;
-      dynamicCompartment = `<div id = "lift${count+1}" class="elevator col d-flex justify-content-center">
+      dynamicCompartment = `<div id = "lift${count+1}" class="elevator ">
       <div class="compartment"><div><div>5</div><div>4</div><div>3</div><div>2</div><div>1</div></div></div></div >`;
 
       $('#elevators').prepend(dynamicCompartment);
